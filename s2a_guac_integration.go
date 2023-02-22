@@ -92,6 +92,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Hello and Welcome!"))
 	return
 }
+
 func spannerGrpcHandler(w http.ResponseWriter, r *http.Request) {
 	instanceId := "projects/zatar-demo/instances/test-instance"
 	iter := adminClient.ListDatabases(ctx, &adminpb.ListDatabasesRequest{
