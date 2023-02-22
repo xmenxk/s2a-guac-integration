@@ -1,0 +1,13 @@
+runtime: go119
+
+service: s2a-guac-test
+
+handlers:
+- url: /.*
+  script: auto
+
+app_engine_apis: true
+
+env_variables:
+  GRPC_GO_LOG_VERBOSITY_LEVEL: 99
+  GRPC_GO_LOG_SEVERITY_LEVEL: "info"
